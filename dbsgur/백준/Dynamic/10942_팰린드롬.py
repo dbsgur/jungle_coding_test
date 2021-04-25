@@ -1,4 +1,4 @@
-# https://www.acmicpc.net/problem/109424
+# https://www.acmicpc.net/problem/10942
 # 팰린드롬이란 ? 거꾸로해도 같은 수
 import sys
 

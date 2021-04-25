@@ -18,6 +18,7 @@ matrix = [[0]*(length2+1) for _ in range(length1+1)]
 for i in range(1, length1 + 1):
     for j in range(1, length2 + 1):
         if str1[i-1] == str2[j-1]:
+            # matrix[i][j] == str1[:i-1]이랑 str[:j-1]까지 LCS의 최대값
             matrix[i][j] = matrix[i-1][j-1] + 1
         else:
             matrix[i][j] = max(matrix[i-1][j], matrix[i][j-1])
