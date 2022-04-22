@@ -15,4 +15,6 @@ dp[0] = 1
 
 for i in range(len(str1)):
     for j in range(i, len(str2)):
-        if str1[i] == str[j]
+        if str1[i] == str2[j]:
+            break
+    break
