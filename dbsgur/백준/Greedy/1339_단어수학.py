@@ -12,13 +12,13 @@ words = [[]for _ in range(8)]
 # print(words)
 # words에 저장해야하는 것 -> 몇번 등장? 알파벳, 어디인덱스-> index로 표현
 visited = [False] * 26
-for _ in range(N):
-    tmp = list(input().strip())
-    idx = len(tmp)
-    visited = [False] * 26
-    for i in range(len(tmp)):
-        if visited[ord(tmp[i]) - 65] == False:
-            words.append([tmp[i], +1])
+# for _ in range(N):
+#     tmp = list(input().strip())
+#     idx = len(tmp)
+#     visited = [False] * 26
+#     for i in range(len(tmp)):
+# if visited[ord(tmp[i]) - 65] == False:
+# words.append([tmp[i], +1])
 # for _ in range(N):
 #     tmp = list(input().strip())
 #     idx = len(tmp)
