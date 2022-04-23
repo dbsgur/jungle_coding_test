@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/9251
+# 다시 풀기
 import sys
 
 sys.stdin = open("input.txt")
@@ -7,14 +9,15 @@ input = sys.stdin.readline
 str1 = input()
 str2 = input()
 
-length = max(len(str1), len(str2))
+length1 = len(str1)
+length2 = len(str2)
 
-dp = [0] * (length+1)
+matrix = [[0]*(length2+1) for _ in range(length1+1)]
 
-dp[0] = 1
-
-for i in range(len(str1)):
-    for j in range(i, len(str2)):
-        if str1[i] == str2[j]:
-            break
-    break
+for i in range(1, length1 + 1):
+    for j in range(1, length2 + 1):
+        if str1[i-1] == str2[j-1]:
+            matrix[i][j] = matrix[i-1][j-1] + 1
+        else:
+            matrix[i][j] = max(matrix[i-1][j], matrix[i][j-1])
+print(matrix[-1][-1])
