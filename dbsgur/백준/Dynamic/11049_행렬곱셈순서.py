@@ -1,4 +1,4 @@
-# https://www.acmicpc.net/problem/11409
+# https://www.acmicpc.net/problem/11049
 # 다시 풀기
 import sys
 

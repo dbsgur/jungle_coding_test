@@ -1,5 +1,6 @@
 # https://www.acmicpc.net/problem/9251
 # 다시 풀기
+# Longest Common Sequence
 import sys
 
 sys.stdin = open("input.txt")

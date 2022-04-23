@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/11053
+# Longest Increase Sequence
 import sys
 
 sys.stdin = open("input.txt")

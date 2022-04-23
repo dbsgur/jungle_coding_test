@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/12865
+# Knapsack Algorithms
 import sys
 
 sys.stdin = open("input.txt")
