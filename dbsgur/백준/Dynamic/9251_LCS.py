@@ -7,8 +7,8 @@ sys.stdin = open("input.txt")
 
 input = sys.stdin.readline
 
-str1 = input()
-str2 = input()
+str1 = input().strip()
+str2 = input().strip()
 
 length1 = len(str1)
 length2 = len(str2)
