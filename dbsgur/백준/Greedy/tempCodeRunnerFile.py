@@ -1,2 +1,2 @@
-
-# print(B)
+meteor}")
+# print(minDistance)
