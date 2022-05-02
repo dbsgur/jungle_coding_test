@@ -1,3 +1,1 @@
-
-# print(dp[1])
-# print(dp[2])
+[0] * (lengthC+1)
