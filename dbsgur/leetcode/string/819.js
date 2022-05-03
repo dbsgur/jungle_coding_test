@@ -5,16 +5,16 @@ const banned = ["hit"];
 arr = paragraph.toLowerCase().split(" ");
 
 console.log(arr);
-
-const obj = {};
+console.log("??");
+let obj = {};
 
 for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
-  if (arr[i] in obj) {
-    obj.arr[i] += 1;
-    console.log("IN IF");
+  if (!obj[arr[i]]) {
+    obj[arr[i]] = 1;
+    // console.log("IN IF");
   } else {
-    obj.arr[i] = 1;
+    obj[arr[i]]++;
   }
 }
 
