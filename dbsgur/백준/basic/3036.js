@@ -15,8 +15,9 @@ const gcd = (a, b) => {
     return gcd(b, a % b);
   }
 };
-for (i = 1; i < N; i++) {
+
+for (i = 1; i < +N; i++) {
   div = gcd(stand, rings[i]);
-  console.log(stand / gcd, "/", rings[i] / gcd);
+  console.log(`${stand / div}/${rings[i] / div}`);
   // console.log("div : ", div);
 }
