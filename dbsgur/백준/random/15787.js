@@ -10,3 +10,4 @@ const [N, M] = input
   .map((x) => +x);
 
 console.log(`N : ${N} M : ${M}`);
+let i;
