@@ -28,4 +28,5 @@ var characterReplacement = function (s, k) {
   return Math.max(...answer);
 };
 
+// ABBB key값이 바뀌는 경우 못잡아냄
 console.log(characterReplacement("ABBB", 1));
