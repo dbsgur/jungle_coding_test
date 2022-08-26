@@ -26,14 +26,12 @@ function dfs(start) {
   stack.push(start);
   while (stack.length > 0) {
     let s = stack.pop();
-    // console.log(`s : ${s}`);
     if (!visited[s]) {
       visited[s] = true;
       answer.push(s);
       let next;
       for (next = N; next >= 1; next--) {
         if (!visited[next] && graph[s][next]) {
-          // console.log(`next : ${next}`);
           stack.push(next);
         }
       }
